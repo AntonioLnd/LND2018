@@ -1,0 +1,26 @@
+
+h1 {
+    font-family: Arial, Times New Roman, Courier New;
+   color: red;
+}
+
+p {
+    font-family: Arial, Times New Roman, Courier New;
+    color: palevioletred;
+}
+
+span.negrita {
+    color: blueviolet;
+    font-weight: bold;
+}
+
+span.cursiva {
+    color: limegreen;
+    font-style: italic;
+}
+
+ul li {
+    font-family: Arial, Times New Roman, Courier New;
+    background-color: grey;
+    color: yellow;
+}

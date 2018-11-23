@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ejercicio 2</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/estilos2.css" />
+     <script>
+    function script() {
+       window.onload = function() {
+    var files = document.querySelectorAll("input[type=file]");
+    files[0].addEventListener("change", function(e) {
+        if(this.files && this.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) { '#imagePreview'("preview").html("src"),"<img src='" +e.target.result+"' />"); }
+            reader.readAsDataURL(this.files[0]);
+        }
+        $('#imagen').change(function(){
+           filePreview(this); 
+        });
+    });
+}
+    }
+    </script>
+</head>
+   
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Tu cara</legend>
+            
+            <div>
+            <label for="Foto">Foto:</label> <input type="file" id="Foto" name="Foto" required>
+            </div>
+            <br>
+            
+            <div id="imagePreview">
+            Previsualización de imagen: 
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Datos generales</legend>
+            <div>
+            <label for="name">Nombre:</label>
+            <input type="text" name="Nombre" required placeholder="Nombre completo" id="name">
+            </div>
+            <br>
+            
+            <div id="genero">
+            <label>Género:</label>
+            <input type="radio" name="Género" required>Hombre 
+            <input type="radio" name="Género" required>Mujer
+            </div>
+            <br>
+            
+            <div>
+            <label for="edad">Edad:</label>
+            <input type="number" min="18" max="110" id="edad">
+            </div>
+            <br>
+            
+            <div>
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="fecha">
+            </div>
+            <br>
+            
+            <div>
+            <label for="color">Color favorito:</label> 
+            <input type="color" id="color">
+            </div>
+            <br>
+            
+            <div>
+            <label for="pais">País:</label> 
+                <select id="pais">
+                    <option value="Canadá">Canadá</option>
+                    <option value="España">España</option>
+                    <option value="Alemania">Alemania</option>
+                </select>
+            </div>
+            <br>
+        </fieldset>
+        
+          <fieldset>
+            <legend>Otras características</legend>
+              <div>
+            <label for="altura">Altura:</label> <a class="Min">Bajo</a><input type="range" id="altura"><a class="Max">Alto</a>
+              </div>
+              <br>
+              
+              <div>
+              <label for="salario">Salario:</label> <a class="Min">Pobre</a><input type="range" id="salario"><a class="Max">Rico</a>
+              </div>
+              <br>
+                
+        </fieldset>
+        
+        <fieldset>
+        <legend>Información de contacto</legend>
+            <div>
+            <label for="email">Email:</label> <input type="email" id="email" required>
+            </div>
+            <br>
+            <div>
+            <label for="movil">Móvil:</label> <input type="tel" id="movil">
+            </div>
+            <br>
+            
+            <div>
+            <label for="dire">Dirección:</label> <textarea name="Dirección" rows="4" cols="30" id="dire"></textarea>
+            </div>
+            <br>
+        
+            <div id="cont">
+            <label>Método de contacto:</label> <input type="checkbox" value="Email">Email
+            <input type="checkbox" value="Whatsapp">Whatsapp
+            <input type="checkbox" value="Skype">Skype
+            </div>
+            
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
