@@ -1,0 +1,36 @@
+h1 {
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2 {
+    text-align: center;
+    border: 1px solid black;
+    width: 30%;
+    background-color: darkred;
+    color: white;
+    margin-left: 70%;
+    margin-top: 0;
+}
+    
+article {
+    margin: 1.5px;
+    border: 1px solid black;
+    background-color: darkgrey;
+    padding: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    width: 100%;
+  }
