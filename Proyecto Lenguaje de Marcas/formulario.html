@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Peliculas</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="shortcut icon" href="Multimedia/Cine.ico" />
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Formulario</h1>
+        
+                <nav class="topnav" id="myTopnav">
+
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/acci%C3%B3n.html">Acción</a></li>
+                <li><a href="/aventuras.html">Aventuras</a></li>
+                <li><a href="/romance.html">Romance</a></li>
+                <li><a href="/terror.html">Terror</a></li>
+                <li><a href="/formulario.html">Formulario</a></li>
+                <li class="icon"> <a href="javascript:void(0);" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a></li>
+        </ul>
+    </nav>
+</header>
+    
+<article>
+    <h2>Formulario de subcripción</h2>
+        <form>
+            <fieldset>
+                <legend>Datos generales</legend>
+                    <div>
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="Nombre" required placeholder="Nombre completo" id="name">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="edad">Edad:</label>
+                        <input type="number" min="18" max="110" id="edad">
+                    </div>
+                    
+                    <br>
+                    <div id="genero">
+                        <label>Género:</label>
+                        <input type="radio" name="Género" required>Hombre 
+                        <input type="radio" name="Género" required>Mujer
+                    </div>
+                    <br>
+            
+                    <div>
+                        <label for="fecha">Fecha de nacimiento:</label>
+                        <input type="date" id="fecha">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="pais">País:</label> 
+                        <select id="pais">
+                        <option value="Canadá">Canadá</option>
+                        <option value="España">España</option>
+                        <option value="Alemania">Alemania</option>
+                        </select>
+                    </div>  
+                    <br>
+                
+                    <div>
+                        <label for="color">Color favorito:</label> 
+                        <input type="color" id="color">
+                    </div>
+                    <br>
+            </fieldset>
+        
+        <fieldset>
+        <legend>Contacto</legend>
+            <div>
+            <label for="email">Email:</label> <input type="email" id="email" required>
+            </div>
+            <br>
+            <div>
+            <label for="movil">Móvil:</label> <input type="tel" id="movil">
+            </div>
+            <br>
+            
+            <div>
+            <label for="dire">Dirección:</label> <textarea name="Dirección" rows="4" cols="30" id="dire"></textarea>
+            </div>
+            <br>
+        
+            <div id="cont">
+            <label>Método de contacto:</label> <input type="checkbox" value="Email">Email
+            <input type="checkbox" value="Whatsapp">Whatsapp
+            <input type="checkbox" value="Skype">Skype
+            </div>
+         
+        </fieldset>
+            
+            <fieldset>
+            <legend>Opinion de la página</legend>
+              <div>
+            <label for="altura">Contenido:</label> <a class="Min">Malo</a><input type="range" id="altura"><a class="Max">Muy bueno</a>
+              </div>
+              <br>
+              
+              <div>
+              <label for="salario">Estilo:</label> <a class="Min">Mal</a><input type="range" id="salario"><a class="Max">Muy Bien</a>
+              </div>
+              <br>
+                
+        </fieldset>
+        <input type="submit" value="Enviar">
+        </form>
+    </article>
+       <footer>
+
+        <table>
+  <tr>
+    <th>Primer Nombre</th>
+    <th>Segundo Nombre</th>
+    <th>Apellido</th>
+    <th>Segundo Apellido</th>
+    <th>Edad</th>
+  </tr>
+  <tr>
+    <td>Antonio</td>
+    <td>David</td> 
+    <td>Cedrés</td>
+    <td>Silva</td>
+    <td>20</td>
+  </tr>
+        </table>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img class="Lice" alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Licencia Creative Commons Atribución 4.0 Internacional</a>.
+    </footer>
+
+</body>
+</html>
